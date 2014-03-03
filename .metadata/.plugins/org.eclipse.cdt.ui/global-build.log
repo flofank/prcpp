@@ -48,3 +48,16 @@ Info: Internal Builder is used for build
 g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
 g++ -o AB01.exe main.o 
 Info: Nothing to build for AB01
+08:09:42 **** Incremental Build of configuration Debug for project AB01 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o AB01.exe main.o 
+Info: Nothing to build for AB01
+15:40:14 **** Rebuild of configuration Debug for project Uebung1 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o MyString.o "..\\MyString.cpp" 
+g++ -o Uebung1.exe main.o MyString.o 
+c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/lib/libmingw32.a(main.o): In function `main':
+e:\p\giaw\src\pkg\mingwrt-4.0.3-1-mingw32-src\bld/../mingwrt-4.0.3-1-mingw32-src/src/libcrt/crt/main.c:91: undefined reference to `WinMain@16'
+collect2.exe: error: ld returned 1 exit status
