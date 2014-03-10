@@ -1,0 +1,17 @@
+/*
+ * MyString.cpp
+ *
+ *  Created on: 03.03.2014
+ *      Author: Florian
+ */
+#include "MyString.h"
+#include <memory>
+
+MyString::MyString(char* obj) {
+	int len;
+	m_contents = shared_ptr<char>(unique_ptr<char[]>(new char[len]));
+}
+
+
+
+

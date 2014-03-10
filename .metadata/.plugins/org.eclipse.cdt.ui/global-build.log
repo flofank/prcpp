@@ -61,3 +61,497 @@ g++ -o Uebung1.exe main.o MyString.o
 c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/lib/libmingw32.a(main.o): In function `main':
 e:\p\giaw\src\pkg\mingwrt-4.0.3-1-mingw32-src\bld/../mingwrt-4.0.3-1-mingw32-src/src/libcrt/crt/main.c:91: undefined reference to `WinMain@16'
 collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for AB01
+17:22:01 **** Rebuild of configuration Debug for project AB03 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp:10:11: error: '::main' must return 'int'
+ void main() {
+           ^
+..\main.cpp: In function 'int main()':
+..\main.cpp:14:6: error: incompatible types in assignment of 'const char [8]' to 'char [10]'
+  msg = "Bonjour";
+      ^
+..\main.cpp:15:4: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  p = "Bonjour";
+    ^
+..\main.cpp:16:6: error: incompatible types in assignment of 'char*' to 'char [10]'
+  msg = p;
+      ^
+..\main.cpp:13:7: warning: unused variable 'msg2' [-Wunused-variable]
+  char msg2[] = "Hello";
+       ^
+17:22:01 **** Incremental Build of configuration Debug for project Uebung1 ****
+Info: Internal Builder is used for build
+g++ -o Uebung1.exe main.o MyString.o 
+c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/lib/libmingw32.a(main.o): In function `main':
+e:\p\giaw\src\pkg\mingwrt-4.0.3-1-mingw32-src\bld/../mingwrt-4.0.3-1-mingw32-src/src/libcrt/crt/main.c:91: undefined reference to `WinMain@16'
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for AB01
+17:22:48 **** Incremental Build of configuration Debug for project AB03 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp:10:11: error: '::main' must return 'int'
+ void main() {
+           ^
+..\main.cpp: In function 'int main()':
+..\main.cpp:14:4: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  p = "Bonjour";
+    ^
+..\main.cpp:15:6: error: incompatible types in assignment of 'char*' to 'char [10]'
+  msg = p;
+      ^
+..\main.cpp:13:7: warning: unused variable 'msg2' [-Wunused-variable]
+  char msg2[] = "Hello";
+       ^
+17:22:48 **** Incremental Build of configuration Debug for project Uebung1 ****
+Info: Internal Builder is used for build
+g++ -o Uebung1.exe main.o MyString.o 
+c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/lib/libmingw32.a(main.o): In function `main':
+e:\p\giaw\src\pkg\mingwrt-4.0.3-1-mingw32-src\bld/../mingwrt-4.0.3-1-mingw32-src/src/libcrt/crt/main.c:91: undefined reference to `WinMain@16'
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for AB01
+17:26:20 **** Incremental Build of configuration Debug for project AB03 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp:10:11: error: '::main' must return 'int'
+ void main() {
+           ^
+..\main.cpp: In function 'int main()':
+..\main.cpp:14:6: error: incompatible types in assignment of 'const char [8]' to 'char [10]'
+  msg = "Bonjour";
+      ^
+..\main.cpp:15:4: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  p = "Bonjour";
+    ^
+..\main.cpp:16:6: error: incompatible types in assignment of 'char*' to 'char [10]'
+  msg = p;
+      ^
+..\main.cpp:13:7: warning: unused variable 'msg2' [-Wunused-variable]
+  char msg2[] = "Hello";
+       ^
+17:26:21 **** Incremental Build of configuration Debug for project Uebung1 ****
+Info: Internal Builder is used for build
+g++ -o Uebung1.exe main.o MyString.o 
+c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/lib/libmingw32.a(main.o): In function `main':
+e:\p\giaw\src\pkg\mingwrt-4.0.3-1-mingw32-src\bld/../mingwrt-4.0.3-1-mingw32-src/src/libcrt/crt/main.c:91: undefined reference to `WinMain@16'
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for AB01
+17:27:11 **** Incremental Build of configuration Debug for project AB03 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp:10:11: error: '::main' must return 'int'
+ void main() {
+           ^
+..\main.cpp: In function 'int main()':
+..\main.cpp:14:6: error: incompatible types in assignment of 'const char [9]' to 'char [10]'
+  msg = "Bonjoure";
+      ^
+..\main.cpp:15:4: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  p = "Bonjour";
+    ^
+..\main.cpp:16:6: error: incompatible types in assignment of 'char*' to 'char [10]'
+  msg = p;
+      ^
+..\main.cpp:13:7: warning: unused variable 'msg2' [-Wunused-variable]
+  char msg2[] = "Hello";
+       ^
+17:27:12 **** Incremental Build of configuration Debug for project Uebung1 ****
+Info: Internal Builder is used for build
+g++ -o Uebung1.exe main.o MyString.o 
+c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/lib/libmingw32.a(main.o): In function `main':
+e:\p\giaw\src\pkg\mingwrt-4.0.3-1-mingw32-src\bld/../mingwrt-4.0.3-1-mingw32-src/src/libcrt/crt/main.c:91: undefined reference to `WinMain@16'
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for AB01
+17:27:19 **** Incremental Build of configuration Debug for project AB03 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp:10:11: error: '::main' must return 'int'
+ void main() {
+           ^
+..\main.cpp: In function 'int main()':
+..\main.cpp:14:6: error: invalid array assignment
+  msg = "Bonjouree";
+      ^
+..\main.cpp:15:4: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  p = "Bonjour";
+    ^
+..\main.cpp:16:6: error: incompatible types in assignment of 'char*' to 'char [10]'
+  msg = p;
+      ^
+..\main.cpp:13:7: warning: unused variable 'msg2' [-Wunused-variable]
+  char msg2[] = "Hello";
+       ^
+17:27:20 **** Incremental Build of configuration Debug for project Uebung1 ****
+Info: Internal Builder is used for build
+g++ -o Uebung1.exe main.o MyString.o 
+c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/lib/libmingw32.a(main.o): In function `main':
+e:\p\giaw\src\pkg\mingwrt-4.0.3-1-mingw32-src\bld/../mingwrt-4.0.3-1-mingw32-src/src/libcrt/crt/main.c:91: undefined reference to `WinMain@16'
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for AB01
+17:27:28 **** Incremental Build of configuration Debug for project AB03 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp:10:11: error: '::main' must return 'int'
+ void main() {
+           ^
+..\main.cpp: In function 'int main()':
+..\main.cpp:14:6: error: incompatible types in assignment of 'const char [8]' to 'char [10]'
+  msg = "Bonjour";
+      ^
+..\main.cpp:15:4: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  p = "Bonjour";
+    ^
+..\main.cpp:16:6: error: incompatible types in assignment of 'char*' to 'char [10]'
+  msg = p;
+      ^
+..\main.cpp:13:7: warning: unused variable 'msg2' [-Wunused-variable]
+  char msg2[] = "Hello";
+       ^
+17:27:29 **** Incremental Build of configuration Debug for project Uebung1 ****
+Info: Internal Builder is used for build
+g++ -o Uebung1.exe main.o MyString.o 
+c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/lib/libmingw32.a(main.o): In function `main':
+e:\p\giaw\src\pkg\mingwrt-4.0.3-1-mingw32-src\bld/../mingwrt-4.0.3-1-mingw32-src/src/libcrt/crt/main.c:91: undefined reference to `WinMain@16'
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for AB01
+17:28:50 **** Incremental Build of configuration Debug for project AB03 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp:10:11: error: '::main' must return 'int'
+ void main() {
+           ^
+..\main.cpp: In function 'int main()':
+..\main.cpp:14:6: error: incompatible types in assignment of 'char [6]' to 'char [10]'
+  msg = msg2;
+      ^
+..\main.cpp:15:4: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  p = "Bonjour";
+    ^
+..\main.cpp:16:6: error: incompatible types in assignment of 'char*' to 'char [10]'
+  msg = p;
+      ^
+17:28:51 **** Incremental Build of configuration Debug for project Uebung1 ****
+Info: Internal Builder is used for build
+g++ -o Uebung1.exe main.o MyString.o 
+c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/lib/libmingw32.a(main.o): In function `main':
+e:\p\giaw\src\pkg\mingwrt-4.0.3-1-mingw32-src\bld/../mingwrt-4.0.3-1-mingw32-src/src/libcrt/crt/main.c:91: undefined reference to `WinMain@16'
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for AB01
+17:29:01 **** Incremental Build of configuration Debug for project AB03 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp:10:11: error: '::main' must return 'int'
+ void main() {
+           ^
+..\main.cpp: In function 'int main()':
+..\main.cpp:14:6: error: invalid array assignment
+  msg = msg2;
+      ^
+..\main.cpp:15:4: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  p = "Bonjour";
+    ^
+..\main.cpp:16:6: error: incompatible types in assignment of 'char*' to 'char [10]'
+  msg = p;
+      ^
+17:29:02 **** Incremental Build of configuration Debug for project Uebung1 ****
+Info: Internal Builder is used for build
+g++ -o Uebung1.exe main.o MyString.o 
+c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/lib/libmingw32.a(main.o): In function `main':
+e:\p\giaw\src\pkg\mingwrt-4.0.3-1-mingw32-src\bld/../mingwrt-4.0.3-1-mingw32-src/src/libcrt/crt/main.c:91: undefined reference to `WinMain@16'
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for AB01
+15:19:41 **** Incremental Build of configuration Debug for project AB03 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp:10:11: error: '::main' must return 'int'
+ void main() {
+           ^
+..\main.cpp: In function 'int main()':
+..\main.cpp:14:6: error: incompatible types in assignment of 'char [6]' to 'char [10]'
+  msg = msg2;
+      ^
+..\main.cpp:15:4: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  p = "Bonjour";
+    ^
+..\main.cpp:16:6: error: incompatible types in assignment of 'char*' to 'char [10]'
+  msg = p;
+      ^
+15:19:45 **** Incremental Build of configuration Debug for project Uebung1 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+g++ -o Uebung1.exe main.o MyString.o 
+c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/lib/libmingw32.a(main.o): In function `main':
+e:\p\giaw\src\pkg\mingwrt-4.0.3-1-mingw32-src\bld/../mingwrt-4.0.3-1-mingw32-src/src/libcrt/crt/main.c:91: undefined reference to `WinMain@16'
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for AB01
+15:20:44 **** Incremental Build of configuration Debug for project AB03 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp:10:11: error: '::main' must return 'int'
+ void main() {
+           ^
+..\main.cpp: In function 'int main()':
+..\main.cpp:14:6: error: incompatible types in assignment of 'char [6]' to 'char [10]'
+  msg = msg2;
+      ^
+..\main.cpp:15:4: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  p = "Bonjour";
+    ^
+..\main.cpp:16:6: error: incompatible types in assignment of 'char*' to 'char [10]'
+  msg = p;
+      ^
+15:20:45 **** Incremental Build of configuration Debug for project Uebung1 ****
+Info: Internal Builder is used for build
+g++ -o Uebung1.exe main.o MyString.o 
+c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/lib/libmingw32.a(main.o): In function `main':
+e:\p\giaw\src\pkg\mingwrt-4.0.3-1-mingw32-src\bld/../mingwrt-4.0.3-1-mingw32-src/src/libcrt/crt/main.c:91: undefined reference to `WinMain@16'
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for AB01
+15:21:58 **** Incremental Build of configuration Debug for project AB03 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp:10:11: error: '::main' must return 'int'
+ void main() {
+           ^
+..\main.cpp: In function 'int main()':
+..\main.cpp:14:6: error: incompatible types in assignment of 'char [6]' to 'char [10]'
+  msg = msg2;
+      ^
+..\main.cpp:15:4: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  p = "Bonjour";
+    ^
+..\main.cpp:16:6: error: incompatible types in assignment of 'char*' to 'char [10]'
+  msg = p;
+      ^
+15:21:59 **** Incremental Build of configuration Debug for project Uebung1 ****
+Info: Internal Builder is used for build
+g++ -o Uebung1.exe main.o MyString.o 
+c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/lib/libmingw32.a(main.o): In function `main':
+e:\p\giaw\src\pkg\mingwrt-4.0.3-1-mingw32-src\bld/../mingwrt-4.0.3-1-mingw32-src/src/libcrt/crt/main.c:91: undefined reference to `WinMain@16'
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for AB01
+15:22:45 **** Incremental Build of configuration Debug for project AB03 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp:10:11: error: '::main' must return 'int'
+ void main() {
+           ^
+..\main.cpp: In function 'int main()':
+..\main.cpp:14:6: error: incompatible types in assignment of 'char [6]' to 'char [10]'
+  msg = msg2;
+      ^
+..\main.cpp:15:4: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  p = "Bonjour";
+    ^
+..\main.cpp:16:6: error: incompatible types in assignment of 'char*' to 'char [10]'
+  msg = p;
+      ^
+15:22:46 **** Incremental Build of configuration Debug for project Uebung1 ****
+Info: Internal Builder is used for build
+g++ -o Uebung1.exe main.o MyString.o 
+c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/lib/libmingw32.a(main.o): In function `main':
+e:\p\giaw\src\pkg\mingwrt-4.0.3-1-mingw32-src\bld/../mingwrt-4.0.3-1-mingw32-src/src/libcrt/crt/main.c:91: undefined reference to `WinMain@16'
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for AB01
+15:23:06 **** Incremental Build of configuration Debug for project AB03 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp:10:11: error: '::main' must return 'int'
+ void main() {
+           ^
+..\main.cpp: In function 'int main()':
+..\main.cpp:14:6: error: incompatible types in assignment of 'char [6]' to 'char [10]'
+  msg = msg2;
+      ^
+..\main.cpp:15:4: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  p = "Bonjour";
+    ^
+..\main.cpp:16:6: error: incompatible types in assignment of 'char*' to 'char [10]'
+  msg = p;
+      ^
+15:23:07 **** Incremental Build of configuration Debug for project Uebung1 ****
+Info: Internal Builder is used for build
+g++ -o Uebung1.exe main.o MyString.o 
+c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/lib/libmingw32.a(main.o): In function `main':
+e:\p\giaw\src\pkg\mingwrt-4.0.3-1-mingw32-src\bld/../mingwrt-4.0.3-1-mingw32-src/src/libcrt/crt/main.c:91: undefined reference to `WinMain@16'
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for AB01
+15:24:29 **** Incremental Build of configuration Debug for project AB03 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp:10:11: error: '::main' must return 'int'
+ void main() {
+           ^
+..\main.cpp: In function 'int main()':
+..\main.cpp:14:6: error: incompatible types in assignment of 'char [6]' to 'char [10]'
+  msg = msg2;
+      ^
+..\main.cpp:15:4: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  p = "Bonjour";
+    ^
+..\main.cpp:16:6: error: incompatible types in assignment of 'char*' to 'char [10]'
+  msg = p;
+      ^
+15:24:29 **** Incremental Build of configuration Debug for project Uebung1 ****
+Info: Internal Builder is used for build
+g++ -o Uebung1.exe main.o MyString.o 
+c:/mingw/bin/../lib/gcc/mingw32/4.8.1/../../../../mingw32/lib/libmingw32.a(main.o): In function `main':
+e:\p\giaw\src\pkg\mingwrt-4.0.3-1-mingw32-src\bld/../mingwrt-4.0.3-1-mingw32-src/src/libcrt/crt/main.c:91: undefined reference to `WinMain@16'
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for AB01
+15:26:13 **** Incremental Build of configuration Debug for project AB03 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp:10:11: error: '::main' must return 'int'
+ void main() {
+           ^
+..\main.cpp: In function 'int main()':
+..\main.cpp:14:6: error: incompatible types in assignment of 'char [6]' to 'char [10]'
+  msg = msg2;
+      ^
+..\main.cpp:15:4: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  p = "Bonjour";
+    ^
+..\main.cpp:16:6: error: incompatible types in assignment of 'char*' to 'char [10]'
+  msg = p;
+      ^
+15:26:14 **** Incremental Build of configuration Debug for project Uebung1 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o MyString.o "..\\MyString.cpp" 
+..\MyString.cpp:7:19: fatal error: mempory: No such file or directory
+ #include <mempory>
+                   ^
+compilation terminated.
+Info: Nothing to build for AB01
+15:26:19 **** Incremental Build of configuration Debug for project AB03 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp:10:11: error: '::main' must return 'int'
+ void main() {
+           ^
+..\main.cpp: In function 'int main()':
+..\main.cpp:14:6: error: incompatible types in assignment of 'char [6]' to 'char [10]'
+  msg = msg2;
+      ^
+..\main.cpp:15:4: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  p = "Bonjour";
+    ^
+..\main.cpp:16:6: error: incompatible types in assignment of 'char*' to 'char [10]'
+  msg = p;
+      ^
+15:26:19 **** Incremental Build of configuration Debug for project Uebung1 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o MyString.o "..\\MyString.cpp" 
+..\MyString.cpp:7:19: fatal error: mempory: No such file or directory
+ #include <mempory>
+                   ^
+compilation terminated.
+Info: Nothing to build for AB01
+15:26:22 **** Incremental Build of configuration Debug for project AB03 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp:10:11: error: '::main' must return 'int'
+ void main() {
+           ^
+..\main.cpp: In function 'int main()':
+..\main.cpp:14:6: error: incompatible types in assignment of 'char [6]' to 'char [10]'
+  msg = msg2;
+      ^
+..\main.cpp:15:4: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  p = "Bonjour";
+    ^
+..\main.cpp:16:6: error: incompatible types in assignment of 'char*' to 'char [10]'
+  msg = p;
+      ^
+15:26:23 **** Incremental Build of configuration Debug for project Uebung1 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o MyString.o "..\\MyString.cpp" 
+..\MyString.cpp:9:1: error: 'MyString' does not name a type
+ MyString::MyString(char* obj) {
+ ^
+Info: Nothing to build for AB01
+15:26:43 **** Incremental Build of configuration Debug for project AB03 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp:10:11: error: '::main' must return 'int'
+ void main() {
+           ^
+..\main.cpp: In function 'int main()':
+..\main.cpp:14:6: error: incompatible types in assignment of 'char [6]' to 'char [10]'
+  msg = msg2;
+      ^
+..\main.cpp:15:4: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  p = "Bonjour";
+    ^
+..\main.cpp:16:6: error: incompatible types in assignment of 'char*' to 'char [10]'
+  msg = p;
+      ^
+15:26:44 **** Incremental Build of configuration Debug for project Uebung1 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o MyString.o "..\\MyString.cpp" 
+In file included from ..\MyString.cpp:7:0:
+..\MyString.h:9:7: warning: override controls (override/final) only available with -std=c++11 or -std=gnu++11 [enabled by default]
+ class MyString final {
+       ^
+..\MyString.h:10:2: error: 'shared_ptr' does not name a type
+  shared_ptr<char> m_contents;
+  ^
+..\MyString.h:11:2: error: 'size_t' does not name a type
+  size_t m_len;
+  ^
+..\MyString.cpp: In constructor 'MyString::MyString(char*)':
+..\MyString.cpp:12:2: error: 'm_contents' was not declared in this scope
+  m_contents = shared_ptr<char>(unique_ptr<char[]>(new char[len]));
+  ^
+..\MyString.cpp:12:15: error: 'shared_ptr' was not declared in this scope
+  m_contents = shared_ptr<char>(unique_ptr<char[]>(new char[len]));
+               ^
+..\MyString.cpp:12:26: error: expected primary-expression before 'char'
+  m_contents = shared_ptr<char>(unique_ptr<char[]>(new char[len]));
+                          ^
+..\MyString.cpp:12:26: error: expected ';' before 'char'
+..\MyString.cpp:11:6: warning: unused variable 'len' [-Wunused-variable]
+  int len  ;
+      ^
+Info: Nothing to build for AB01
+15:27:27 **** Incremental Build of configuration Debug for project AB03 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp:10:11: error: '::main' must return 'int'
+ void main() {
+           ^
+..\main.cpp: In function 'int main()':
+..\main.cpp:14:6: error: incompatible types in assignment of 'char [6]' to 'char [10]'
+  msg = msg2;
+      ^
+..\main.cpp:15:4: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  p = "Bonjour";
+    ^
+..\main.cpp:16:6: error: incompatible types in assignment of 'char*' to 'char [10]'
+  msg = p;
+      ^
+15:27:28 **** Incremental Build of configuration Debug for project Uebung1 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o MyString.o "..\\MyString.cpp" 
+In file included from ..\MyString.cpp:7:0:
+..\MyString.h:9:7: warning: override controls (override/final) only available with -std=c++11 or -std=gnu++11 [enabled by default]
+ class MyString final {
+       ^
+..\MyString.h:10:2: error: 'shared_ptr' does not name a type
+  shared_ptr<char> m_contents;
+  ^
+..\MyString.h:11:2: error: 'size_t' does not name a type
+  size_t m_len;
+  ^
+..\MyString.cpp: In constructor 'MyString::MyString(char*)':
+..\MyString.cpp:12:2: error: 'm_contents' was not declared in this scope
+  m_contents = shared_ptr<char>(unique_ptr<char[]>(new char[len]));
+  ^
+..\MyString.cpp:12:15: error: 'shared_ptr' was not declared in this scope
+  m_contents = shared_ptr<char>(unique_ptr<char[]>(new char[len]));
+               ^
+..\MyString.cpp:12:26: error: expected primary-expression before 'char'
+  m_contents = shared_ptr<char>(unique_ptr<char[]>(new char[len]));
+                          ^
+..\MyString.cpp:12:26: error: expected ';' before 'char'

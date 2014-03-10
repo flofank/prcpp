@@ -1,0 +1,19 @@
+15:27:27 **** Incremental Build of configuration Debug for project AB03 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.cpp" 
+..\main.cpp:10:11: error: '::main' must return 'int'
+ void main() {
+           ^
+..\main.cpp: In function 'int main()':
+..\main.cpp:14:6: error: incompatible types in assignment of 'char [6]' to 'char [10]'
+  msg = msg2;
+      ^
+..\main.cpp:15:4: warning: deprecated conversion from string constant to 'char*' [-Wwrite-strings]
+  p = "Bonjour";
+    ^
+..\main.cpp:16:6: error: incompatible types in assignment of 'char*' to 'char [10]'
+  msg = p;
+      ^
+
+15:27:28 Build Finished (took 635ms)
+
