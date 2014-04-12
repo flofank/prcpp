@@ -1,0 +1,142 @@
+import java.util.Random;
+
+
+public class Matrix {
+	private static final Random r = new Random();
+	private double[] matrix;
+	private int rows;
+	private int cols;
+	
+	static {
+		System.loadLibrary("Uebung2");
+	}
+	
+	public static void main(String[] args) {
+//		testMultiply();
+		testPower();
+	}
+	
+	public static void testMultiply() {
+		System.out.println("###################### Testing Multiplication ####################");
+		Matrix m1 = new Matrix(400, 6000);
+		Matrix m2 = new Matrix(6000, 300);
+		long time = System.currentTimeMillis();
+		Matrix m3 = m1.multiplyNative(m2);
+		System.out.println("Multiplied native in " + (System.currentTimeMillis() - time) + "ms");
+		time = System.currentTimeMillis();
+		Matrix m4 = m1.multiply(m2);
+		System.out.println("Multiplied with Java in " + (System.currentTimeMillis() - time) + "ms");
+		System.out.println("Comparing results: " + (m3.equals(m4) ? "same" : "different"));
+		System.out.println("##################################################################");
+	}
+	
+	public static void testPower() {
+		System.out.println("###################### Testing Power ############################");
+		Matrix m1 = new Matrix(2,2);
+		long time = System.currentTimeMillis();
+		Matrix m2 = m1.powerNative(3);
+		System.out.println("Powered native in " + (System.currentTimeMillis() - time) + "ms");
+		time = System.currentTimeMillis();
+		Matrix m3 = m1.power(3);
+		System.out.println("Powered with Java in " + (System.currentTimeMillis() - time) + "ms");
+		System.out.println("Comparing results: " + (m2.equals(m3) ? "same" : "different"));
+		System.out.println("##################################################################");
+	}
+
+	public Matrix(Matrix m) {
+		this.rows = m.rows;
+		this.cols = m.cols;
+		this.matrix = new double[m.matrix.length];
+		for (int i = 0; i < matrix.length; i++) {
+			this.matrix[i] = m.matrix[i];
+		}
+	}
+	
+	public Matrix multiplyNative(Matrix m) {
+		Matrix nM = new Matrix(rows, m.cols, 0);
+		multiplyC(this.matrix, m.matrix, nM.matrix, m.cols, this.rows, this.cols);
+		return nM;
+	}
+	
+	native void multiplyC(double[] mA, double[] mB, double[] mR, int bCols, int aRows, int aCols);
+	
+	public Matrix powerNative(int k) {
+		Matrix mA = new Matrix(this);
+		Matrix mB = new Matrix(this);
+		Matrix mR = new Matrix(this);
+		powerC(mA.matrix, mB.matrix, mR.matrix, rows, k);
+		return mR;
+	}
+	
+	native void powerC(double[] a, double[] b, double[] r, int size, int k);
+	
+	public Matrix(int rows, int cols) {
+		this.rows = rows;
+		this.cols = cols;
+		matrix = new double[rows * cols];
+		for (int i = 0; i < matrix.length; i++) {
+			matrix[i] = r.nextDouble();
+		}
+	}
+	
+	public Matrix(int rows, int cols, double val) {
+		this.rows = rows;
+		this.cols = cols;
+		matrix = new double[rows * cols];
+		for (int i = 0; i < matrix.length; i++) { 
+			matrix[i] = val;
+		}
+	}
+	
+
+	public Matrix multiply(Matrix m) {
+		Matrix nM = new Matrix(rows, m.cols, 0);
+		for (int c = 0; c < m.cols; c++) {
+			// Für jede Spalte in m
+			for (int r = 0; r < rows; r++) {
+				// Für jede Zeile in this
+				double val = 0;
+				for (int e = 0; e < cols; e++) {
+					// Für jedes Element in dieser Zeile von this
+					val += matrix[r * cols + e] * m.matrix[e * m.cols + c];
+				}
+				nM.matrix[r * nM.cols + c] = val;
+			}
+		}
+		return nM;
+	}
+	
+	public Matrix power(int k) {
+		Matrix m = this;
+		while(--k > 0) {
+			m = m.multiply(this);
+		}
+		return m;
+	}
+	
+	boolean equals(Matrix m) {
+		if (cols != m.cols) {
+			return false;
+		}
+		if (rows != m.rows) {
+			return false;
+		}
+		for (int i = 0; i < matrix.length; i++) {
+			if (matrix[i] != m.matrix[i]) return false;
+		}
+		return true;
+	}
+	
+	public String toString() {
+		StringBuilder s = new StringBuilder();
+		s.append("--------- Matrix start ----------\n");
+		for (int r = 0; r < rows; r++) {
+			for (int c = 0; c < cols; c++) {
+				s.append(matrix[r * cols + c] + " ");
+			}
+			s.append("\n");
+		}
+		s.append("--------- Matrix end ------------\n");
+		return s.toString();
+	}
+}
